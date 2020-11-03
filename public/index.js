@@ -32,7 +32,7 @@ let lastNamesIncludesInputText = [];
 document
   .querySelector('.searchBox')
   .addEventListener('keyup', async (event) => {
-    const inputText = event.target.value;
+    const inputText = event.target.value.toLowerCase();
     const namesIncludesInputText = filterMatchText(names, inputText);
     const searchOptions = document.getElementById('searchOptions');
 
