@@ -6,12 +6,13 @@ const removeChildElements = (element) => {
 document
   .querySelector('.searchBox')
   .addEventListener('keyup', async (event) => {
-    const inputText = event.target.value;
     const response = await fetch('/data');
     const data = await response.json();
 
     const searchOptions = document.querySelector('#searchOptions');
     removeChildElements(searchOptions);
+
+    const inputText = event.target.value;
 
     Object.keys(data).forEach((key) => {
       if (data[key].includes(inputText)) {
