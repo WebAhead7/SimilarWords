@@ -48,9 +48,26 @@ button:focus {
 }
 
 .header {
-  padding: 60px;
+  padding: 60px 60px 0 60px;
   text-align: center;
   background: #1abc9c;
   color: white;
   font-size: 30px;
+}
+
+.icons {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.icons i:hover {
+  cursor: pointer;
+}
+
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
 }
