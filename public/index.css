@@ -10,4 +10,17 @@
   border-radius: 5px;
   border: solid;
   height: 30px;
+  font-style: oblique;
+  font-weight: bold;
+  padding: 0 10px;
+  border-radius: 10px;
+  border-color: rgba(139, 0, 139, 0.24);
+  background: rgba(169, 169, 169, 0.185);
+}
+
+.searchBox:hover,
+.searchBox:focus {
+}
+body {
+  background: rgba(100, 148, 237, 0.438);
 }
