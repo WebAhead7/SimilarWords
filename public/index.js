@@ -9,11 +9,12 @@ const removeChildElements = (element) => {
 };
 
 const filterMatchText = (array, text) =>
-  array.filter((elem) => elem.includes(text));
+  array.filter((elem) => elem.toLowerCase().includes(text));
 
 const arraysEqual = (a, b) => {
   if (a === b) return true;
   if (!a || !b) return false;
+
   if (a.length !== b.length) return false;
 
   for (let i = 0; i < a.length; i += 1) {
