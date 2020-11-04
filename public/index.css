@@ -4,8 +4,12 @@
   box-sizing: border-box;
 }
 
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 .searchBox {
-  display: block;
   margin: 0 auto;
   border-radius: 5px;
   border: solid;
@@ -20,6 +24,8 @@
 
 .searchBox:hover,
 .searchBox:focus {
+  background: rgba(169, 169, 169, 0.377);
+  outline: none;
 }
 body {
   background: rgba(100, 148, 237, 0.438);
