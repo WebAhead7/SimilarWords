@@ -30,3 +30,16 @@
 body {
   background: rgba(100, 148, 237, 0.438);
 }
+
+button {
+  cursor: pointer;
+  background: transparent;
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  background: rgba(100, 148, 237, 0.527);
+}
+
+button:focus {
+  outline: none;
+}
