@@ -29,21 +29,19 @@ window.addEventListener('load', async () => {
 });
 
 let lastNamesIncludesInputText = [];
-document
-  .querySelector('.searchBox')
-  .addEventListener('keyup', async (event) => {
-    const inputText = event.target.value.toLowerCase();
-    const namesIncludesInputText = filterMatchText(names, inputText);
-    const searchOptions = document.getElementById('searchOptions');
+document.querySelector('.searchBox').addEventListener('keyup', (event) => {
+  const inputText = event.target.value.toLowerCase();
+  const namesIncludesInputText = filterMatchText(names, inputText);
+  const searchOptions = document.getElementById('searchOptions');
 
-    if (!arraysEqual(lastNamesIncludesInputText, namesIncludesInputText)) {
-      removeChildElements(searchOptions);
-      namesIncludesInputText.forEach((name) => {
-        const newOption = document.createElement('option');
-        newOption.value = name;
-        searchOptions.appendChild(newOption);
-      });
+  if (!arraysEqual(lastNamesIncludesInputText, namesIncludesInputText)) {
+    removeChildElements(searchOptions);
+    namesIncludesInputText.forEach((name) => {
+      const newOption = document.createElement('option');
+      newOption.value = name;
+      searchOptions.appendChild(newOption);
+    });
 
-      lastNamesIncludesInputText = [...namesIncludesInputText];
-    }
-  });
+    lastNamesIncludesInputText = [...namesIncludesInputText];
+  }
+});
