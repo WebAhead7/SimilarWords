@@ -13,13 +13,16 @@
   margin: 0 auto;
   border-radius: 5px;
   border: solid;
-  height: 30px;
+  height: 40px;
+  width: 400px;
+  margin-top: 50px;
   font-style: oblique;
   font-weight: bold;
+  font-size: large;
   padding: 0 10px;
   border-radius: 10px;
-  border-color: rgba(139, 0, 139, 0.24);
-  background: rgba(169, 169, 169, 0.185);
+  border-color: rgba(6, 39, 3, 0.24);
+  background: #1abc9cb2;
 }
 
 .searchBox:hover,
@@ -28,18 +31,26 @@
   outline: none;
 }
 body {
-  background: rgba(100, 148, 237, 0.438);
+  background-image: url('/public/background.jpg');
 }
 
 button {
   cursor: pointer;
   background: transparent;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 50px;
   border-radius: 10px;
-  background: rgba(100, 148, 237, 0.527);
+  background: #1abc9cb2;
 }
 
 button:focus {
   outline: none;
+}
+
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
 }
