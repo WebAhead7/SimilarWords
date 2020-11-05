@@ -23,10 +23,15 @@ const arraysEqual = (a, b) => {
   return true;
 };
 
-window.addEventListener('load', async () => {
-  const response = await fetch('/data');
-  const data = await response.json();
-  names = data.names;
+window.addEventListener('load', () => {
+  fetch('/data')
+    .then((body) => body.json())
+    .then((data) => {
+      names = data.names;
+    })
+    .catch((err) => {
+      throw new Error(err);
+    });
 });
 
 let lastNamesIncludesInputText = [];
