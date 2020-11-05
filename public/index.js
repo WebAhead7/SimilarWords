@@ -67,13 +67,18 @@ form.addEventListener('submit', (event) => {
       const heading = document.createElement('h2');
       const { gender } = data;
       heading.textContent = data.name;
+      heading.style.textTransform = 'capitalize';
+
       const headingtwo = document.createElement('h3');
       headingtwo.textContent = gender;
+      headingtwo.style.textTransform = 'capitalize';
       const image = document.createElement('img');
       if (gender === 'male') {
+        heading.style.color = 'blue';
         image.src = '/public/img/boy.jpg';
         image.alt = '';
       } else if (gender === 'female') {
+        heading.style.color = 'red';
         image.src = '/public/img/girl.jpg';
         image.alt = '';
       } else {
