@@ -87,3 +87,26 @@ a:hover,
 a:active {
   color: inherit;
 }
+
+@media all and (max-width: 515px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 95%;
+  }
+  h3 {
+    font-size: 95%;
+  }
+
+  .searchBox {
+    width: 150px;
+  }
+  button {
+    width: 35px;
+  }
+  img {
+    width: 240px;
+    height: 164px;
+  }
+}
