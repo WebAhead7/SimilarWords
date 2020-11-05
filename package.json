@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha || true",
-    "start": "node server.js",
+    "start": "node ./server/server.js",
     "dev": "killall node && nodemon server.js"
   },
   "repository": {

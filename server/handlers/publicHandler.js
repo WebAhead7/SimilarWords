@@ -15,7 +15,7 @@ function publicHandler(req, res) {
   const extension = urlArray[1];
   const type = types[extension];
 
-  const filePath = path.join(__dirname, '..', url);
+  const filePath = path.join(__dirname, '..', '..', url);
   fs.readFile(filePath, (error, file) => {
     if (error) {
       res.writeHead(404, { 'content-type': 'text/html' });
