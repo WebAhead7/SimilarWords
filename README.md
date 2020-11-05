@@ -31,7 +31,7 @@
 </p>
 <p align="center">  searchBox: autocomplete options with respect to input. 
 
-  Our application provides names searching (both F and M), you can pick a name and see whereas it's a boy or a girl one. </p>
+  Our application provides names searching (both F and M), you can pick a name and see whereas it's a boy or a girl one ONLY with the letter A. </p>
 
 Available soon!!!!!
 A communication app that help new parents to be figure out if a name is suitable for a boy or a girl or both (unisex). 
