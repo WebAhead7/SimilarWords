@@ -6,7 +6,7 @@
   "scripts": {
     "test": "mocha || true",
     "start": "node server.js",
-    "devStart": "killall node && nodemon server.js"
+    "dev": "killall node && nodemon server.js"
   },
   "repository": {
     "type": "git",
