@@ -1,7 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 
-function dataHandler(request, res) {
+function dataHandler(req, res) {
   const filePath = path.join(__dirname, '..', 'data.json');
   fs.readFile(filePath, (error, file) => {
     if (error) {
