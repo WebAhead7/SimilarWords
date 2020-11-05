@@ -3,12 +3,12 @@
 <br />
 
 <p align="center">
-  <img src="https://github.com/WebAhead7/we-do-list/blob/main/img/logo.PNG" width="250" height="248"/>
+  <img src="https://github.com/WebAhead7/searchBox/blob/main/public/img/logo.jpg" width="250" height="248"/>
 </p>
 <p align="center">
   <h3 align="center"> Names gender determinant </h3>
   <p align="center">
-    <a href="https://webahead7.github.io/we-do-list/"><strong>Check our application »</strong></a>
+    <a href="https://searchbox123.herokuapp.com/"><strong>Check our application »</strong></a>
   </p>
 </p>
 
@@ -58,6 +58,6 @@ See the [open issues](https://github.com/WebAhead7/searchBox/issues) for a list 
 
 ## Contact
 
-- Mr. Salah/Majde Majadly: [@GitHub](https://github.com/mjmajadly)
+- Mr. Salah Majadly: [@GitHub](https://github.com/mjmajadly)
 - Mr. Nizar Halloun: [@GitHub](https://github.com/nizarhalloun)
 - Mr. Rakad Khawaled: [@GitHub](https://github.com/rakad-kh)
