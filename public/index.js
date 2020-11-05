@@ -53,16 +53,9 @@ const output = document.querySelector('output');
 form.addEventListener('submit', (event) => {
   // stop the form submitting and reloading the page
   event.preventDefault();
-
-  // clear out any previous results
   output.innerHTML = '';
-
-  // get the value of the field with name="pokemon"
   const formData = new FormData(event.target);
   const name = formData.get('kidname');
-  console.log(formData);
-  // request that pokemon from PokeAPI
-  console.log(name);
 
   fetch(`https://gender-api.com/get?name=${name}&key=YeFJcGQluraWPyRCsP`)
     .then((response) => {
@@ -81,10 +74,10 @@ form.addEventListener('submit', (event) => {
         image.src = '/public/img/boy.jpg';
         image.alt = '';
       } else if (gender === 'female') {
-        image.src = './img/girl.jpg';
+        image.src = '/public/img/girl.jpg';
         image.alt = '';
       } else {
-        image.src = './img/boygirl.jpg';
+        image.src = '/public/img/boygirl.jpg';
         image.alt = '';
       }
 

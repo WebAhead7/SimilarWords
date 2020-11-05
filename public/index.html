@@ -5,20 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Search Box</title>
     <link rel="stylesheet" href="/public/index.css" />
+    <script
+      src="https://kit.fontawesome.com/32db44c2dc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <form>
-      <input
-        class="searchBox"
-        id="kidname"
-        name="kidname"
-        type="text"
-        list="searchOptions"
-      />
-      <datalist id="searchOptions"> </datalist>
-      <button type="submit">Search</button>
-      <output></output>
+    <h1><br /><br />Search for a baby name!</h1>
+    <h2>Find baby names that start with the letter A</h2>
+    <div class="wrapper">
+      <div class="searchBoxWrapper">
+        <form>
+          <input
+            class="searchBox"
+            id="kidname"
+            name="kidname"
+            type="text"
+            list="searchOptions"
+          />
+          <button type="submit"><i class="fas fa-search"></i>Search</button>
+          <datalist id="searchOptions"> </datalist>
+
+          <output></output>
+        </form>
+      </div>
+    </div>
+
+    <!-- <div class="header">
+      <h1>Useless Search Box</h1>
+      <p>Have fun</p>
+      <div class="icons">
+        <a href="https://github.com/nizarhalloun"
+          ><i class="fab fa-github"></i
+        ></a>
+      </div>
+    </div>
+    <form >
+    <div class="wrapper">
+      <div class="searchBoxWrapper">
+        <input
+          class="searchBox"
+          type="text"
+          id="kidname"
+          list="searchOptions"
+          spellcheck="false"
+        />
+        <button type="submit"><i class="fas fa-search"></i></button>
+        <datalist id="searchOptions"> </datalist>
+      </div>
     </form>
+    </div> -->
   </body>
   <script src="/public/index.js"></script>
 </html>
