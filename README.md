@@ -36,8 +36,9 @@
 
 <p align="center"> The autocomplete search depends on your input, sensitive to any letter typed in the input element </p>
 
-<p font-size="large" font-weight="bold">Available soon!!!!!
-A communication app that helps understanding the meaning of given word. </p>
+
+Available soon!!!!!
+A communication app that helps understanding the meaning of given word.
 
 ## Built With
 
