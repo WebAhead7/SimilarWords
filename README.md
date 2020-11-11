@@ -3,7 +3,7 @@
 <br />
 
 <p align="center">
-  <img src="https://github.com/WebAhead7/searchBox/blob/main/public/img/logo.jpg" width="250" height="248"/>
+  <img src="https://i.ytimg.com/vi/axH16jBCa5k/maxresdefault.jpg"/>
 </p>
 <p align="center">
   <h3 align="center"> Names gender determinant </h3>
