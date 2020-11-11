@@ -1,36 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Box</title>
-    <link rel="stylesheet" href="/public/index.css" />
-    <script
-      src="https://kit.fontawesome.com/32db44c2dc.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <h1><br /><br />Search for a baby name!</h1>
-    <h2>Find baby names that start with the letter A</h2>
-    <div class="wrapper">
-      <div class="searchBoxWrapper">
-        <form>
-          <input
-            class="searchBox"
-            id="kidname"
-            name="kidname"
-            type="text"
-            list="searchOptions"
-            autocomplete="off"
-          />
-          <button type="submit"><i class="fas fa-search"></i></button>
-          <datalist id="searchOptions"> </datalist>
 
-          <output></output>
-        </form>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Box</title>
+  <link rel="stylesheet" href="/public/index.css" />
+  <script src="https://kit.fontawesome.com/32db44c2dc.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <h1><br /><br />Search for given words!</h1>
+  <h2>Find words with a meaning similar to your input</h2>
+  <div class="wrapper">
+    <div class="searchBoxWrapper">
+      <form>
+        <input class="searchBox" id="kidname" name="kidname" type="text" list="searchOptions" autocomplete="off" />
+        <button type="submit"><i class="fas fa-search"></i></button>
+        <datalist id="searchOptions"> </datalist>
+      </form>
     </div>
-  </body>
-  <script src="/public/index.js"></script>
+  </div>
+  <output></output>
+</body>
+<script src="/public/index.js"></script>
+
 </html>

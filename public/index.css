@@ -110,3 +110,18 @@ a:active {
     height: 164px;
   }
 }
+output{
+  display: grid;
+  grid-gap: 1em;
+  grid-template-rows: repeat(var(--grid-rows), 1fr);
+  grid-template-columns: repeat(var(--grid-cols), 1fr);
+  padding: 2em;
+}
+
+.grid-item{
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+  padding: 1em;
+  text-align: center;
+}

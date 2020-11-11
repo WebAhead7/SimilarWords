@@ -3,7 +3,7 @@ const url = require('url');
 
 const fetchApi = (req) => new Promise((resolve, reject) => {
     const name = url.parse(req.url, true);
-    https.get(`https://api.datamuse.com/sug?s=${name.query.name}`, (res) => {
+    https.get(`https://api.datamuse.com/words?ml=${name.query.name}`, (res) => {
         let new_data = "";
         res.on("data", chunk => {
             new_data += chunk;
@@ -15,9 +15,9 @@ const fetchApi = (req) => new Promise((resolve, reject) => {
     })
         .on("error", reject)
 })
-const new_arr = curr => curr.map((curr) => curr.word);
+const new_arr = curr => curr.map((curr) => ` ${curr.word} (${(curr.tags).toString()}) `);
 
-function dataHandler(req, res) {
+function inputHandler(req, res) {
     fetchApi(req)
         .then(({ data }) => {
             const final_data = new_arr(JSON.parse(data));
@@ -27,4 +27,4 @@ function dataHandler(req, res) {
         })
 }
 
-module.exports = dataHandler;
+module.exports = inputHandler;
