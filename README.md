@@ -36,9 +36,8 @@
 <p align="center"> For every given word; provides all the words with similar meaning to help you figure out the meaning of a new word you face. </p>
 
 <p align="center"> The autocomplete search depends on your input, sensitive to any letter typed in the input element </p>
-
 <br>
-Available soon!!!!!
+Available soon!!!!!<br>
 A communication app that helps understanding the meaning of given word.
 
 ## Built With
