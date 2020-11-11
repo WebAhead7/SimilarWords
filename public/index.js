@@ -13,7 +13,7 @@ function renderList(arr) {
 
 document.querySelector('.searchBox').addEventListener('keyup', (event) => {
   const inputText = event.target.value.toLowerCase();
-  const local = `http://localhost:3000/data?name=${inputText}`;
+  const local = `https://similarwords.herokuapp.com/data?name=${inputText}`;
   fetch(local)
     .then((response) => {
       if (!response.ok) throw new Error(response.status);
