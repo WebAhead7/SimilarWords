@@ -6,7 +6,7 @@
   <img src="https://i.ytimg.com/vi/axH16jBCa5k/maxresdefault.jpg"/>
 </p>
 <p align="center">
-  <h3 align="center"> Names gender determinant </h3>
+  <h3 align="center"> Searching for Similar Words Meaning </h3>
   <p align="center">
     <a href="https://searchbox123.herokuapp.com/"><strong>Check our application »</strong></a>
   </p>
@@ -27,15 +27,19 @@
 ## About The Project
 
 <p align="center">
-  <img src="./example-1.png"/ width=50%, height=350px>
-  <img src="./example-2.png"/ width=50%, height=350px>
+  <img src="./example-1.png"/ width=49%, height=380px>
+  <img src="./example-2.png"/ width=49%, height=380px>
 </p>
-<p align="center">  searchBox: autocomplete options with respect to input. 
+<p align="center"> Find almost all the words with similar meaning
+                   to your given word via autocomplete search_box.
 
-  Our application provides names searching (both F and M), you can pick a name and see whereas it's a boy or a girl one ONLY with the letter A. </p>
+<p align="center"> for every given word; 
+  
+  provides all the words with similar meaning to help you figure out the meaning of a new word you face. </p>
 
 Available soon!!!!!
-A communication app that help new parents to be figure out if a name is suitable for a boy or a girl or both (unisex). 
+A communication app that helps understanding the meaning of given word.
+</p>
 
 ## Built With
 
@@ -47,18 +51,16 @@ A communication app that help new parents to be figure out if a name is suitable
 
 ## Getting Started
 
-Check out the project instructions from WebAhead: [Projet instructions](https://github.com/WebAhead/master-reference/blob/master/coursebook/week-5/project.md)
+Check out the project instructions from WebAhead: [Projet instructions](https://github.com/WebAhead/master-reference/blob/master/coursebook/week-6/project.md)
 
 <!-- ROADMAP -->
 
 ## Roadmap
 
-See the [open issues](https://github.com/WebAhead7/searchBox/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/WebAhead7/SimilarWords/issues) for a list of proposed features (and known issues).
 
 <!-- CONTACT -->
 
 ## Contact
 
-- Mr. Salah Majadly: [@GitHub](https://github.com/mjmajadly)
-- Mr. Nizar Halloun: [@GitHub](https://github.com/nizarhalloun)
 - Mr. Rakad Khawaled: [@GitHub](https://github.com/rakad-kh)
