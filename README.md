@@ -27,9 +27,8 @@
 ## About The Project
 
 <p align="center">
-  <img src="./example-1.png"/ width=33%, height=350px>
-  <img src="./example-2.png"/ width=33%, height=350px>
-  <img src="./example-3.png"/ width=33%, height=350px>
+  <img src="./example-1.png"/ width=50%, height=350px>
+  <img src="./example-2.png"/ width=50%, height=350px>
 </p>
 <p align="center">  searchBox: autocomplete options with respect to input. 
 
