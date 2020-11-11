@@ -26,11 +26,12 @@
 
 ## About The Project
 
+<p align="center"> Find almost all the words with similar meaning to your given word via autocomplete search_box. </p>
+
 <p align="center">
   <img src="./example-1.png"/ width=49%, height=380px>
   <img src="./example-2.png"/ width=49%, height=380px>
 </p>
-<p align="center"> Find almost all the words with similar meaning to your given word via autocomplete search_box.
 
 <p align="center"> For every given word; provides all the words with similar meaning to help you figure out the meaning of a new word you face. </p>
 
