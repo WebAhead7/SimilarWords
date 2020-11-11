@@ -37,7 +37,7 @@
 
 <p align="center"> The autocomplete search depends on your input, sensitive to any letter typed in the input element </p>
 
-/br
+<br>
 Available soon!!!!!
 A communication app that helps understanding the meaning of given word.
 
