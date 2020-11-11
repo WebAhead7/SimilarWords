@@ -27,7 +27,9 @@
 ## About The Project
 
 <p align="center">
-  <img src="https://github.com/WebAhead7/searchBox/blob/main/public/img/screenshot.PNG" width="600" height="286" />
+  <img src="./example-1.png"/>
+  <img src="./example-2.png"/>
+  <img src="./example-3.png"/>
 </p>
 <p align="center">  searchBox: autocomplete options with respect to input. 
 
