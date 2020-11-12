@@ -1,9 +1,9 @@
 const https = require('https');
 const url = require('url');
 
-module.exports = (req) => new Promise((resolve, reject) => {
+module.exports = (req, link) => new Promise((resolve, reject) => {
     const name = url.parse(req.url, true);
-    https.get(`https://api.datamuse.com/sug?s=${name.query.name}`, (res) => {
+    https.get(`link`, (res) => {
         let new_data = "";
         res.on("data", chunk => {
             new_data += chunk;
