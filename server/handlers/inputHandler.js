@@ -3,7 +3,7 @@ const url = require('url');
 const fetchApi = require('./api');
 
 function inputHandler(req, res, new_arr) {
-    fetchApi(req)
+    fetchApi(req, `https://api.datamuse.com/words?ml=${name.query.name}`)
         .then(({ data }) => {
             const final_data = new_arr(JSON.parse(data));
             res.end(JSON.stringify(final_data))
