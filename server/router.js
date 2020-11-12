@@ -5,7 +5,7 @@ const missingHandler = require('./handlers/missingHandler');
 
 const autocomplete_api = `https://api.datamuse.com/words?ml=${name.query.name}`;
 const similar_words_api = `https://api.datamuse.com/sug?s=${name.query.name}`;
-const autocomplete_funcionkkkkk = curr => curr.map((curr) => ` ${curr.word} (${(curr.tags).toString()}) `);
+const autocomplete_funcion = curr => curr.map((curr) => ` ${curr.word} (${(curr.tags).toString()}) `);
 const similar_words_funcion = curr => curr.map((curr) => curr.word);
 
 const router = (req, res) => {
