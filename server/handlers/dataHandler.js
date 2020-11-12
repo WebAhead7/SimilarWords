@@ -7,7 +7,7 @@ function dataHandler(req, new_arr, link, res) {
         .then(({ data }) => {
             const final_data = new_arr(JSON.parse(data));
             res.end(JSON.stringify(final_data))
-        }).catch(error => alert(error.message))
+        }).catch(error => console.log(error.message))
 }
 
 module.exports = dataHandler;
