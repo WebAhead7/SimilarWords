@@ -1,6 +1,6 @@
 
 const list = document.querySelector("#searchOptions");
-const link="https://similarwords.herokuapp.com/"
+const link="https://similarweb.herokuapp.com/"
 
 function renderList(arr) {
   list.innerHTML = "";
