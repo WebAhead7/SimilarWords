@@ -16,9 +16,9 @@ const router = (req, res) => {
   } else if (url.includes('public')) {
     publicHandler(req, res);
   } else if (url.includes('/data')) {
-    dataHandler(req, similarwords_funcion, similar_words_api, res);
-  } else if (url.includes('/curr')) {
     dataHandler(req, autocomplete_funcion, autocomplete_api, res);
+  } else if (url.includes('/curr')) {
+    dataHandler(req, similarwords_funcion, similar_words_api, res);
   } else {
     missingHandler(req, res);
   }
