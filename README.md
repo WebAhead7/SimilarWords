@@ -8,7 +8,7 @@
 <p align="center">
   <h3 align="center"> Searching for Similar Words Meaning </h3>
   <p align="center">
-    <a href="https://similarwords.herokuapp.com/"><strong>Check our application »</strong></a>
+    <a href="https://similarweb.herokuapp.com/"><strong>Check our application »</strong></a>
   </p>
 </p>
 
