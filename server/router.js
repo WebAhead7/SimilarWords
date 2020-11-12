@@ -12,10 +12,9 @@ const router = (req, res) => {
   } else if (url.includes('public')) {
     publicHandler(req, res);
   } else if (url.includes('/data')) {
-    dataHandler(req, res);
-  }
-  else if (url.includes('/curr')) {
-    inputHandler(req, res);
+    dataHandler(req, res, curr => curr.map((curr) => curr.word);
+  } else if (url.includes('/curr')) {
+    inputHandler(req, res, const new_arr = curr => curr.map((curr) => ` ${curr.word} (${(curr.tags).toString()}) `));
   } else {
     missingHandler(req, res);
   }
