@@ -2,9 +2,7 @@ const https = require('https');
 const url = require('url');
 const fetchApi = require('./api');
 
-const new_arr = curr => curr.map((curr) => curr.word);
-
-function dataHandler(req, res) {
+function dataHandler(req, res, new_arr) {
     fetchApi(req)
         .then(({ data }) => {
             const final_data = new_arr(JSON.parse(data));
