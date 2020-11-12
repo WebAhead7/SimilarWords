@@ -1,16 +1,21 @@
 const https = require('https');
 const url = require('url');
 const fetchApi = require('./api');
+const output = document.querySelector('output');
 
 function dataHandler(req, new_arr, link, res) {
     fetchApi(req, link)
         .then(({ data }) => {
             const final_data = new_arr(JSON.parse(data));
             res.end(JSON.stringify(final_data))
-        }).catch( (error) => {
-        console.log(error.message);
-        res.setHeader('content-type', 'text/html');
-        res.end('<h1>Not found</h1>');
+        })
+        .catch( (error) => {
+            console.log(error.message);
+            if (error.message === '404') {
+                output.textContent = `⚠️ Couldn't find your search`;
+            } else {
+                output.textContent = `⚠️ Something went wrong`;
+            }
     })
 }
 
