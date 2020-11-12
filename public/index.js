@@ -31,20 +31,6 @@ document.querySelector('.searchBox').addEventListener('keyup', (event) => {
       }
     });
 })
-// const namesIncludesInputText = filterMatchText(names, inputText);
-// const searchOptions = document.getElementById('searchOptions');
-
-// if (!arraysEqual(lastNamesIncludesInputText, namesIncludesInputText)) {
-//   removeChildElements(searchOptions);
-//   namesIncludesInputText.forEach((name) => {
-//     const newOption = document.createElement('option');
-//     newOption.value = name;
-//     searchOptions.appendChild(newOption);
-//   });
-
-//   lastNamesIncludesInputText = [...namesIncludesInputText];
-// }
-// });
 
 const output = document.querySelector('output');
 
