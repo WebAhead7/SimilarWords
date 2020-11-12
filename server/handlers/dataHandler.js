@@ -8,7 +8,8 @@ function dataHandler(req, new_arr, link, res) {
             const final_data = new_arr(JSON.parse(data));
             res.end(JSON.stringify(final_data))
         }).catch( (error) => {
-        console.log(error.message)
+        console.log(error.message);
+        res.setHeader('content-type', 'text/html');
         res.end('<h1>Not found</h1>');
     })
 }
