@@ -14,7 +14,7 @@ function renderList(arr) {
 
 document.querySelector('.searchBox').addEventListener('keyup', (event) => {
   const inputText = event.target.value.toLowerCase();
-  const local = link+`data?name=${inputText}`;
+  const local = link+`autoComplete?name=${inputText}`;
   fetch(local)
     .then((response) => {
       if (!response.ok) throw new Error(response.status);
@@ -46,7 +46,7 @@ function renderResult(arr) {
 document.querySelector('form').addEventListener('submit', (event) => {
   event.preventDefault();
   const inputText = document.querySelector('.searchBox').value;
-  const local = `${link}/curr?name=${inputText}`;
+  const local = `${link}/similarWords?name=${inputText}`;
   fetch(local)
     .then((response) => {
       if (!response.ok) throw new Error(response.status);
