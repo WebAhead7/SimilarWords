@@ -2,8 +2,8 @@ const https = require('https');
 const url = require('url');
 const fetchApi = require('./api');
 
-function dataHandler(req, res, new_arr) {
-    fetchApi(req, `https://api.datamuse.com/sug?s=${name.query.name}`)
+function dataHandler(req, res, new_arr, link) {
+    fetchApi(req, link)
         .then(({ data }) => {
             const final_data = new_arr(JSON.parse(data));
             res.end(JSON.stringify(final_data))
