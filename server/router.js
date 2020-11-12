@@ -5,8 +5,8 @@ const missingHandler = require('./handlers/missingHandler');
 
 const autocomplete_api = `https://api.datamuse.com/words?ml=${name.query.name}`;
 const similar_words_api = `https://api.datamuse.com/sug?s=${name.query.name}`;
-const autocomp_funcion = curr => curr.map((curr) => ` ${curr.word} (${(curr.tags).toString()}) `);
-const equal_to_funcion = curr => curr.map((curr) => curr.word);
+const autocomplete_funcion = curr => curr.map((curr) => ` ${curr.word} (${(curr.tags).toString()}) `);
+const similarwords_funcion = curr => curr.map((curr) => curr.word);
 
 const router = (req, res) => {
   const { url } = req;
@@ -16,9 +16,9 @@ const router = (req, res) => {
   } else if (url.includes('public')) {
     publicHandler(req, res);
   } else if (url.includes('/data')) {
-    dataHandler(req, res, equal_to_funcion, similar_words_api);
+    dataHandler(req, res, similarwords_funcion, similar_words_api);
   } else if (url.includes('/curr')) {
-    dataHandler(req, res, autocomp_funcion, autocomplete_api);
+    dataHandler(req, res, autocomplete_funcion, autocomplete_api);
   } else {
     missingHandler(req, res);
   }
