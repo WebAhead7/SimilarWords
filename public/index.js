@@ -1,6 +1,6 @@
 
 const list = document.querySelector("#searchOptions");
-const link="https://similarwords.herokuapp.com"
+const link="https://similarwords.herokuapp.com/"
 
 function renderList(arr) {
   list.innerHTML = "";
@@ -14,7 +14,7 @@ function renderList(arr) {
 
 document.querySelector('.searchBox').addEventListener('keyup', (event) => {
   const inputText = event.target.value.toLowerCase();
-  const local = `${link}/data?name=${inputText}`;
+  const local = link+`data?name=${inputText}`;
   fetch(local)
     .then((response) => {
       if (!response.ok) throw new Error(response.status);
