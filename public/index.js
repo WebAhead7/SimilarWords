@@ -4,6 +4,9 @@ const link="https://similarweb.herokuapp.com/"
 
 function renderList(arr) {
   list.innerHTML = "";
+  if (arr.length==0){
+    list.innerHTML(`<li> No Matching Words, Try other word</li>`);
+  }
   arr.forEach((curr) => {
     const option = document.createElement("option");
     option.innerText = `${curr}`;
@@ -25,7 +28,7 @@ document.querySelector('.searchBox').addEventListener('keyup', (event) => {
     })
     .catch((error) => {
       if (error.message === '404') {
-        output.textContent = `⚠️ Couldn't find "${name}"`;
+        output.textContent = `⚠️ Couldn't find ${inputText}`;
       } else {
         output.textContent = '⚠️ Something went wrong';
       }
