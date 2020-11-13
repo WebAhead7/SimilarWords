@@ -42,7 +42,7 @@ const output = document.querySelector('output');
 function renderResult(arr,name) {
   output.innerHTML = "";
   if (arr.length ==0){
-    output.textContent = `⚠️ Couldn't find "${name}"`;
+    output.textContent = `⚠️ Couldn't find ${name}`;
   }
   for (c = 0; c < (arr.length); c++) {
     let cell = document.createElement("div");
@@ -65,7 +65,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
     })
     .catch((error) => {
       if (error.message === '404') {
-        output.textContent = `⚠️ Couldn't find "${inputText}"`;
+        output.textContent = `⚠️ Couldn't find ${inputText}`;
       } else {
         output.textContent = '⚠️ Something went wrong';
       }
