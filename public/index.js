@@ -5,7 +5,9 @@ const link="https://similarweb.herokuapp.com/"
 function renderList(arr) {
   list.innerHTML = "";
   if (arr.length==0){
-    list.innerHTML(`<li> No Matching Words, Try other word</li>`);
+    const option = document.createElement("option");
+    option.innerText = `No Matching Words, Try other word`;
+    list.appendChild(option);
   }
   arr.forEach((curr) => {
     const option = document.createElement("option");
