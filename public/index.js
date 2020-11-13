@@ -29,6 +29,7 @@ document.querySelector('.searchBox').addEventListener('keyup', (event) => {
       renderList(res);
     })
     .catch((error) => {
+      output.styly.color = "red";
       if (error.message === '404') {
         output.textContent = `⚠️ Couldn't find ${inputText}`;
       } else {
@@ -42,6 +43,7 @@ const output = document.querySelector('output');
 function renderResult(arr,name) {
   output.innerHTML = "";
   if (arr.length ==0){
+    output.styly.color = "red";
     output.textContent = `⚠️ Couldn't find ${name}`;
   }
   for (c = 0; c < (arr.length); c++) {
@@ -64,6 +66,7 @@ document.querySelector('form').addEventListener('submit', (event) => {
       renderResult(res,inputText);
     })
     .catch((error) => {
+      output.styly.color = "red";
       if (error.message === '404') {
         output.textContent = `⚠️ Couldn't find ${inputText}`;
       } else {
