@@ -1,7 +1,6 @@
 const https = require('https');
 const url = require('url');
 const fetchApi = require('./api');
-const output = document.querySelector('output');
 
 function dataHandler(req, new_arr, link, res) {
     fetchApi(req, link)
